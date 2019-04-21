@@ -1,7 +1,7 @@
 [
 	{
 		"name": "DAWN",
-		"image": "dawn.png",
+		"image": "placeholder.jpg",
 		"url": "https://github.com/berlin-open-wireless-lab/DAWN",
 		"date": "Jan 2019",
 		"tags": ["OpenWrt","Client Steering"]
