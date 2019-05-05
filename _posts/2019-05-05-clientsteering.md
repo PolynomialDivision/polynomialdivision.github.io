@@ -97,3 +97,17 @@ Furthermore, some devices have mac-randomization for their probe requests. There
 If an AP has two radios that can be controlled separately, one radio can hop periodically over all other channels. On those channels it can receive and decode the frames and use them to get signal strength information to other clients. In addition, APs can send data null frames to clients to create traffic the other stations can hear.
 
 If an AP has only one radio, it can still hop through all other channels. Of course, in the timegap the AP is hopping through all channels, no transmission can happen with the AP. Further, the AP has to signal this to its clients.
+
+### Results
+
+|Uncontrolled|Controlled|
+|---|---|
+|![Dawn Off](/static/img/dawnon.png)|![Dawn On](/static/img/dawnoff.png)|
+
+Here is an example how the an uncontrolled vs an controlled situation looks like.
+
+|Timeline|Barplot|
+|---|---|
+|![Dawn Off](/static/img/dawnon.png)|![Dawn On](/static/img/dawnoff.png)|
+
+Further, the results are displayed.
