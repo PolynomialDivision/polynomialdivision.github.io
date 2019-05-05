@@ -73,7 +73,7 @@ Reason Codes|Description|
 After the deassociation of the client, the previous mechanism can be used to guide the client to the right AP.
 
 ##### Other Handover Techniques: Channel Switch Announcement
-There are techniques to force a client to another AP by sending a channel switch announcement to the client without actually switching the channel. For example there are two APs: On at 2.4 GHz and another at 5 GHz. Both run with the same BSSID. Now the 2.4 GHz AP would send some channel switch announcement to the client that it now switches to the 5 GHz frequency. However, the interface won't switch the frequency but the client will switch. However, the interface won't switch the frequency but the client will switch to the new interface which has the same BSSID. This is some kind of seamless handover.
+There are techniques to force a client to another AP by sending a channel switch announcement to the client without actually switching the channel. For example there are two APs: On at 2.4 GHz and another at 5 GHz. Both run with the same BSSID. Now the 2.4 GHz AP would send some channel switch announcement to the client that it now switches to the 5 GHz frequency. However, the interface won't switch the frequency but the client will switch to the new interface which has the same BSSID. This is some kind of seamless handover.
 
 ### Hearing Map
 
