@@ -31,11 +31,12 @@ The association can be triggered by the AP or the client itself. Both are able t
 ### Associtation Control
 Association control has some difficulties. There are different ways to steer a client to the right AP. All the control mechanisms come with advantages and disadvantages. At the end, a combination should be used to implement a feasible solution.
 
+#### Controlling the Probe Exchange
+
 |Scanning|Answering|
 |---|---|
 |![Associtation Control](/static/img/assoc_1.png)|![Association Control](/static/img/assoc_2.png)|
 
-#### Controlling the Probe Exchange
 A very efficient control is to suppress probe response message. If the client does not receive a probe response, it will not start an association to the AP.  Therefore, no further message overhead is created. At the end, the chosen AP is the only one, responding to the client with a probe response. Sadly, suppressing the probe response does not work all the time. The client can learn about the AP through passive scanning, because It is not possible to suppress beacon frames. Beacon frames are essentially for maintaining the WiFi network.
 In addition, the client can directly try to associate to an already known AP without exchanging probe requests.
 
