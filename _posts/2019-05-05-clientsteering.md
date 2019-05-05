@@ -14,7 +14,7 @@ WiFi introduced `802.11k` and `802.11v`. This new amendments introduced new Radi
 
 #### Scanning
 
-Typically, a client devices scans for nearby APs by sending out probe request messages. The AP will respond with probe response messages containing information about supported rates, network capabilities and further information. That process is called `active scanning`. Furthermore, the client has the ability to collect `beacon frames` to find out other stations. This process is called `passive scanning`.
+Typically, a client devices scans for nearby APs by sending out probe request messages. The AP will respond with probe response messages containing information about supported rates, network capabilities and further information. That process is called `active scanning`. Furthermore, the client has the ability to collect `beacon frames` to learn abouth other APs in its range. This process is called `passive scanning`.
 Typically, the client connects to the AP with the highest signal strength.
 
 #### Authentication
@@ -26,7 +26,7 @@ In the association the clients associates with the AP. After a successful associ
 Like the authentication, the association can be declined by the AP using a status code. A huge adverse is that declining the association needs a successful authentication beforehand. So the client needs to exchange at least two messages (often 4 if the client exchanges probe messages).
  
 #### De-Association
-The association can be triggered by the AP or the client itself. Both are able to give a reason code for that.
+The de-association can be triggered by the AP or the client itself. Both are able to give a reason code for that.
 
 ### Associtation Control
 Association control has some difficulties. There are different ways to steer a client to the right AP. All the control mechanisms come with advantages and disadvantages. At the end, a combination should be used to implement a feasible solution.
