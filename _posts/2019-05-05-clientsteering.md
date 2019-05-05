@@ -69,3 +69,26 @@ Reason Codes|Description|
 |...|...|
 |5|Disassociated because AP is unable to handle all currently associated stations.|
 |...|...|
+
+After the deassociation of the client, the previous mechanism can be used to guide the client to the right AP.
+
+### Hearing Map
+
+There are different ways to create a hearing map. I just describe one way of doing it.
+
+#### Hearing Map based on Probe Exchange
+
+The probe request and response exchange has a great impact with which
+AP the station will associate. In this step the client will learn about the APs it can connect to. The
+other way around an AP only takes notice of the station if it sends a probe request. Different wireless
+devices treat this process differently. Not every wireless device is scanning every channel and then
+decides to which AP to connect. It is necessary for a hearing map that the station sends a probe request to all APs that are in its range. The probe requests allow to create a hearing map for the station and gather important information like the RSSI, transmission rates, capabilities and the frequency.
+That is why the laptop has to be forced by the APs to scan every channel. So first probe response message and association tries can be declined. Only then it is allowed to join an access point. All the probe
+requests will be collected. At the end, this allows to get information about the APs (BSSIDs) the station
+can connect to.
+
+#### Other Hearing Map Approaches
+
+If an AP has two radios that can be controlled separately, one radio can hop periodically over all other channels. On those channels it can receive and decode the frames and use them to get signal strength information to other clients. In addition, APs can send data null frames to clients to create traffic the other stations can hear.
+
+If an AP has only one radio, it can still hop through all other channels. Of curse, in the timegap the AP is hopping through all channels, no transmission can happen with the AP. Further, the AP has to signal this to its clients.
