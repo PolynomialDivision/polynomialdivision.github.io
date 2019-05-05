@@ -58,7 +58,7 @@ Looking at the IEEE 802.11 standard, the are only a few interesting status code 
 
 #### Deauthentication
 
-|Try Associtation|Decline Associtation|
+|Connected Client|De-Association|
 |---|---|
 |![Deauthentication Control](/static/img/dissassociation_1.png)|![Deauthentication Control](/static/img/dissassociation_2.png)|
 
