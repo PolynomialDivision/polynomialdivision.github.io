@@ -55,3 +55,16 @@ If the controlling the probe exchange is not successful the AP can further deny 
 |...|...|
 
 Looking at the IEEE 802.11 standard, the are only a few interesting status code that can be used. Still, the status codes are often related to the association and not the authentication. Of course, you can use the same status code for declining the authentication. It depends on the driver implementation, how the client will handle that.
+
+#### Deauthentication
+|Try Associtation|Decline Associtation|
+|---|---|
+|![Deauthentication Control](/static/img/dissassociation_1.png)|![Deauthentication Control](/static/img/dissassociation_2.png)|
+
+If the connection of a link decreases or the situation is changing, the controller might want to sihft the station to another AP. For that it can deassociate the client. (better alternative would be `802.11v`)
+
+Reason Codes|Description|
+|---|---|
+|...|...|
+|5|Disassociated because AP is unable to handle all currently associated stations.|
+|...|...|
