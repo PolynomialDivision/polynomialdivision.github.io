@@ -40,4 +40,12 @@ A very efficient control is to suppress probe response message. If the client do
 In addition, the client can directly try to associate to an already known AP without exchanging probe requests.
 
 #### Declining Association
-If the controlling the probe exchange is not successful the AP can further deny the authentication or association. Denying the authentication has
+If the controlling the probe exchange is not successful the AP can further deny the authentication or association. Denying the authentication is faster then declining the association.
+
+|Status Code|Description|
+|---|---|
+|...|...|
+|17|Association denied because the AP is unable to handle additional stations.|
+|...|...|
+
+Looking at the IEEE 802.11 standard, the are only a few interesting status code that can be used. Still, the status codes are often related to the association and not the authentication. Of course, you can use the same status code for declining the authentication. It depends on the driver implementation, how the client will handle that.
