@@ -77,8 +77,6 @@ There are techniques to force a client to another AP by sending a channel switch
 
 ### Hearing Map
 
-![Hearing Map](/static/img/hearing_map.png)
-
 There are different ways to create a hearing map. I just describe one way of doing it.
 
 #### Hearing Map based on Probe Exchange
