@@ -57,6 +57,7 @@ If the controlling the probe exchange is not successful the AP can further deny 
 Looking at the IEEE 802.11 standard, the are only a few interesting status code that can be used. Still, the status codes are often related to the association and not the authentication. Of course, you can use the same status code for declining the authentication. It depends on the driver implementation, how the client will handle that.
 
 #### Deauthentication
+
 |Try Associtation|Decline Associtation|
 |---|---|
 |![Deauthentication Control](/static/img/dissassociation_1.png)|![Deauthentication Control](/static/img/dissassociation_2.png)|
