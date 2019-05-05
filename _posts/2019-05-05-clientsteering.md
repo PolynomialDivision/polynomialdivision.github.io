@@ -14,7 +14,7 @@ WiFi introduced `802.11k` and `802.11v`. This new amendments introduced new Radi
 
 #### Scanning
 
-Typically, a client devices scans for nearby APs by sending out probe request messages. The AP will respond with probe response messages containing information about supported rates, network capabilities and further information. That process is called `active scanning`. Furthermore, the client has the ability to collect `beacon frames` to learn abouth other APs in its range. This process is called `passive scanning`.
+Typically, a client devices scans for nearby APs by sending out probe request messages. The AP will respond with probe response messages containing information about supported rates, network capabilities and further information. That process is called `active scanning`. Furthermore, the client has the ability to collect `beacon frames` to learn about other APs in its range. This process is called `passive scanning`.
 Typically, the client connects to the AP with the highest signal strength.
 
 #### Authentication
@@ -28,7 +28,7 @@ Like the authentication, the association can be declined by the AP using a statu
 #### De-Association
 The de-association can be triggered by the AP or the client itself. Both are able to give a reason code for that.
 
-### Associtation Control
+### Association Control
 Association control has some difficulties. There are different ways to steer a client to the right AP. All the control mechanisms come with advantages and disadvantages. At the end, a combination should be used to implement a feasible solution.
 
 #### Controlling the Probe Exchange
@@ -42,7 +42,7 @@ In addition, the client can directly try to associate to an already known AP wit
 
 #### Declining Association
 
-|Try Associtation|Decline Associtation|
+|Try Association|Decline Association|
 |---|---|
 |![Associtation Control](/static/img/deny_assoc_1.png)|![Association Control](/static/img/deny_assoc_2.png)|
 
@@ -56,13 +56,13 @@ If the controlling the probe exchange is not successful the AP can further deny 
 
 Looking at the IEEE 802.11 standard, there are only a few interesting status code that can be used. Still, the status codes are often related to the association and not the authentication. Of course, you can use the same status code for declining the authentication. It depends on the driver implementation, how the client will handle that.
 
-#### Deauthentication
+#### De-Association
 
 |Connected Client|De-Association|
 |---|---|
 |![Deauthentication Control](/static/img/dissassociation_1.png)|![Deauthentication Control](/static/img/dissassociation_2.png)|
 
-If the connection of a link decreases or the situation is changing, the controller might want to sihft the station to another AP. For that it can deassociate the client. (better alternative would be `802.11v`)
+If the connection of a link decreases or the situation is changing, the controller might want to shift the station to another AP. For that it can de-associate the client. (better alternative would be `802.11v`)
 
 Reason Codes|Description|
 |---|---|
@@ -70,7 +70,7 @@ Reason Codes|Description|
 |5|Disassociated because AP is unable to handle all currently associated stations.|
 |...|...|
 
-After the deassociation of the client, the previous mechanism can be used to guide the client to the right AP.
+After the de-association of the client, the previous mechanism can be used to guide the client to the right AP.
 
 ##### Other Handover Techniques: Channel Switch Announcement
 There are techniques to force a client to another AP by sending a channel switch announcement to the client without actually switching the channel. For example there are two APs: On at 2.4 GHz and another at 5 GHz. Both run with the same BSSID. Now the 2.4 GHz AP would send some channel switch announcement to the client that it now switches to the 5 GHz frequency. However, the interface won't switch the frequency but the client will switch to the new interface which has the same BSSID. This is some kind of seamless handover.
@@ -96,7 +96,7 @@ Furthermore, some devices have mac-randomization for their probe requests. There
 
 If an AP has two radios that can be controlled separately, one radio can hop periodically over all other channels. On those channels it can receive and decode the frames and use them to get signal strength information to other clients. In addition, APs can send data null frames to clients to create traffic the other stations can hear.
 
-If an AP has only one radio, it can still hop through all other channels. Of course, in the timegap the AP is hopping through all channels, no transmission can happen with the AP. Further, the AP has to signal this to its clients.
+If an AP has only one radio, it can still hop through all other channels. Of course, in the time-gap the AP is hopping through all channels, no transmission can happen with the AP. Further, the AP has to signal this to its clients.
 
 ### Results
 
@@ -104,7 +104,7 @@ If an AP has only one radio, it can still hop through all other channels. Of cou
 |---|---|
 |![Dawn Off](/static/img/dawnon.png)|![Dawn On](/static/img/dawnoff.png)|
 
-Here is an example how the an uncontrolled vs an controlled situation looks like.
+Here is an example the an uncontrolled vs an controlled situation can look like.
 
 |Timeline|Barplot|
 |---|---|
