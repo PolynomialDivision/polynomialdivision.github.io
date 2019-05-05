@@ -10,7 +10,7 @@ WiFi introduced `802.11k` and `802.11v`. This new admantmends introduced new Rad
 
 |WiFi Association|
 |---|
-| ![Associtation Control](../../static/img/assocdeassoc.png)| 
+| ![Associtation Control](/static/img/assocdeassoc.png)| 
 
 #### Scanning
 
@@ -24,5 +24,5 @@ Typically, a client devices scans for nearby APs by sending out probe request me
 
 |Scanning|Answering|
 |---|---|
-|![Associtation Control](../../static/img/assoc_1.png)|![Associtation Control](../../static/img/assoc_2.png)|
+|![Associtation Control](/static/img/assoc_1.png)|![Associtation Control](/static/img/assoc_2.png)|
 
