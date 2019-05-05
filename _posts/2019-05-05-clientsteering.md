@@ -41,6 +41,11 @@ A very efficient control is to suppress probe response message. If the client do
 In addition, the client can directly try to associate to an already known AP without exchanging probe requests.
 
 #### Declining Association
+
+|Try Associtation|Decline Associtation|
+|---|---|
+|![Associtation Control](/static/img/deny_assoc_1.png)|![Association Control](/static/img/deny_assoc_2.png)|
+
 If the controlling the probe exchange is not successful the AP can further deny the authentication or association. Denying the authentication is faster then declining the association.
 
 |Status Code|Description|
