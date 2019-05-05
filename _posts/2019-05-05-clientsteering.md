@@ -108,6 +108,6 @@ Here is an example how the an uncontrolled vs an controlled situation looks like
 
 |Timeline|Barplot|
 |---|---|
-|![Dawn Off](/static/img/dawnon.png)|![Dawn On](/static/img/dawnoff.png)|
+|![Dawn Off](/static/img/sum_time.png)|![Dawn On](/static/img/sum_barplot.png)|
 
 Further, the results are displayed.
