@@ -102,7 +102,7 @@ If an AP has only one radio, it can still hop through all other channels. Of cou
 
 |Uncontrolled|Controlled|
 |---|---|
-|![Dawn Off](/static/img/dawnon.png)|![Dawn On](/static/img/dawnoff.png)|
+|![Dawn Off](/static/img/dawnoff.png)|![Dawn On](/static/img/dawnon.png)|
 
 Here is an example how the an uncontrolled vs an controlled situation looks like.
 
