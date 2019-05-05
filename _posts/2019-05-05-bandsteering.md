@@ -4,7 +4,7 @@ title: Bandsteering in OpenWrt
 categories: openwrt
 ---
 
-People are interested in bringing band-steering to OpenWrt. There is even a [hostapd patch](https://lists.01.org/pipermail/connman/2016-March/000496.html) supporting band-steering. This patch can not directly be used on OpenWrt because OpenWrt opens t3o separate hostapd instances for both radios.
+People are interested in bringing band-steering to OpenWrt. There is even a [hostapd patch](https://lists.01.org/pipermail/connman/2016-March/000496.html) supporting band-steering. This patch can not directly be used on OpenWrt because OpenWrt opens two separate hostapd instances for both radios.
 That is why I present other approaches.
 
 ## 802.11k,v amendments
