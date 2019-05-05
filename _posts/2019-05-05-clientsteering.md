@@ -86,6 +86,8 @@ decides to which AP to connect. It is necessary for a hearing map that the stati
 That is why the laptop has to be forced by the APs to scan every channel. So first probe response message and association tries can be declined. Only then it is allowed to join an access point. All the probe
 requests will be collected. At the end, this allows to get information about the APs (BSSIDs) the station
 can connect to.
+**Limitations:** This only works in static scenarios. The up-to-dateness depends on the clients background scanning frequency. Scanning costs energy. Therefore, mobile devices scan as less as possible.
+Furthermore, some devices have mac-randomization for their probe requests. Therefore, probe requests might not be assignable to the actual devices.
 
 #### Other Hearing Map Approaches
 
